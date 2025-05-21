@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.main-navbar {
+  background-color: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-navbar ul {
+  list-style: none;
+  display:flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.vehicles {
+  background-color:white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  gap: 30px;
+  padding:40px;
+}
+
+.vehicle {
+  gap: 30px;
+  padding: 40px;
+  text-align: center;
+  background:white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px reba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.vehicle:hover{
+  transform: scale(1.05);
+}
+
+.vehicle img {
+  width: 100%;
+  height: auto;
+  max-width: 250*px;
+  margin-bottom: 10px;
+
+}
+
+.vehicle h2 {
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.vehicle a {
+  text-decoration: none;
+  color:#007bff ;
+  margin: 0 5px;
+}
+
+ .div menu{
+  width: 25%;
+  padding-left: 30px;
+  border-left: 1px solid #ccc;
+}
+
+.menu ul{
+  list-style:none;
+  padding: 0;
+}
+
+.menu a{
+  text-decoration: none;
+  color: #000;
+}
+
+.menu a:hover{
+  color:#007bff;
+}
+

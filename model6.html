@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tesla Inventory</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: white;
+      padding: 20px;
+      border-right: 1px solid #ccc;
+    }
+
+    .sidebar h2 {
+      font-size: 22px;
+    }
+
+    .sidebar input, .sidebar label {
+      margin: 5px 0;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .tag {
+      background-color: #ccc;
+      color: black;
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">TESLA</div>
+    <nav>
+      <a href="#">Vehicles</a>
+      <a href="#">Energy</a>
+      <a href="#">Charging</a>
+      <a href="#">Discover</a>
+      <a href="#">Shop</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>Inventory</h2>
+      <p><input type="text" placeholder="Enter zip code"></p>
+      <p><input type="radio" name="type" checked> New
+         <input type="radio" name="type"> Used</p>
+
+      <h3>Model</h3>
+      <p><input type="radio" name="model"> Model S</p>
+      <p><input type="radio" name="model" checked> Model 3</p>
+      <p><input type="radio" name="model"> Model X</p>
+      <p><input type="radio" name="model"> Model Y</p>
+      <p><input type="radio" name="model"> Cybertruck</p>
+
+      <h3>Payment</h3>
+      <p><input type="radio" name="payment" checked> Cash</p>
+      <p><input type="radio" name="payment"> Lease</p>
+      <p><input type="radio" name="payment"> Finance</p>
+    </div>
+
+    <div class="main-content">
+      <div class="card">
+        <div class="tag">Reduced by $1,920</div>
+        <img src="car1.avif">
+        <div class="price">$33,070</div>
+        <div class="description">2025 Repaired Demo Vehicle with 50 mi<br>363 mi Range (EPA est.)</div>
+      </div>
+
+      <div class="card">
+        <div class="tag">Reduced by $1,700</div>
+        <img src="car2.avif" alt=>
+        <div class="price">$33,290</div>
+        <div class="description">2025 Repaired Demo Vehicle with 16 mi<br>363 mi Range (EPA est.)</div>
+      </div>
+
+      <div class="card">
+        <div class="tag">Reduced by $920</div>
+        <img src="car3.avif">
+        <div class="price">$34,070</div>
+        <div class="description">2025 Demo Vehicle with 1,314 mi<br>363 mi Range (EPA est.)</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

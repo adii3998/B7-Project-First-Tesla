@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.main-navbar {
+  background-color: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-navbar ul {
+  list-style: none;
+  display:flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.energys {
+  background-color:white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  gap: 10px;
+  padding:20px;
+}
+
+.energy {
+  
+  gap: 20px;
+  padding: 30px;
+  text-align: center;
+  background:white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px reba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.energy:hover{
+  transform: scale(1.05);
+}
+
+.energy img {
+  width:90%;
+  gap: 30px;
+  padding: 10px;
+  height: auto;
+  max-width: 250px;
+  margin-bottom: 10px;
+
+}
+
+.energy h2 {
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.energy a {
+  text-decoration: none;
+  color:#007bff ;
+  margin: 0 5px;
+}
+
+.div menu{
+  width: 25%;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+  padding-top: 100px;
+  line-height: 1.6;
+  text-align: left;
+  padding-right: 30px;
+}
+
+.menu ul{
+  list-style:none;
+  padding-left: 10px;
+}
+
+.menu a{
+  text-decoration: none;
+  color: #000;
+}
+
+.menu a:hover{
+  color:#007bff;
+}
+
